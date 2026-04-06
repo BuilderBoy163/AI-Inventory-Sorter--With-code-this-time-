@@ -66,8 +66,8 @@ Open the Mods screen (requires ModMenu), find *AI Inventory Sort*, and click *Co
 
 1. When you press **AI Sort**, the mod collects every item in your 36 inventory slots.
 2. It builds a prompt describing those items plus any snapshot / pin constraints.
-3. It sends the prompt to `claude-sonnet-4-20250514` via the Anthropic API.
-4. Claude returns a JSON array of 36 slot assignments.
+3. It sends the prompt to `Ollama 20B OSS GPT Cloud`
+4. The AI returns a JSON array of 36 slot assignments.
 5. The mod rearranges your inventory on-the-fly.
 
 ### Default sort order (no snapshot)
@@ -75,22 +75,6 @@ Open the Mods screen (requires ModMenu), find *AI Inventory Sort*, and click *Co
 ```
 Hotbar  →  weapon · pickaxe · axe · food · shield · bow · torch · ender pearls
 Main    →  combat gear · tools · food · resources · building blocks · misc
-```
-
-### Snapshot system
-
-Press **Snapshot** with your preferred layout active.  The mod saves the arrangement to `config/aiinventorysort.json`.  On the next **AI Sort**, Claude will try to match that layout as closely as possible given the items currently in your inventory.
-
-### Hotbar pins
-
-Add entries to `hotbarPins` in the config to hard-lock specific items to specific hotbar slots:
-
-```json
-"hotbarPins": {
-  "0": "minecraft:diamond_sword",
-  "1": "minecraft:diamond_pickaxe",
-  "4": "minecraft:cooked_beef"
-}
 ```
 
 ---
