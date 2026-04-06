@@ -2,7 +2,7 @@
 
 Adds two buttons to your Minecraft inventory screen:
 
-- **AI Sort** — sends your current inventory to Claude AI, which reorganises it by survival priority (or matches your saved snapshot layout)
+- **AI Sort** — sends your current inventory to an Ollama 20B model, which reorganises it by survival priority (or matches your saved snapshot layout)
 - **Snapshot** — saves your current inventory arrangement as a template the AI will replicate on future sorts
 
 ---
@@ -11,9 +11,9 @@ Adds two buttons to your Minecraft inventory screen:
 
 | Dependency | Version |
 |---|---|
-| Minecraft | 1.21.1 |
-| Fabric Loader | ≥ 0.16.5 |
-| Fabric API | ≥ 0.103.0+1.21.1 |
+| Minecraft | 1.21.11 |
+| Fabric Loader | 0.18.3+ |
+| Fabric API | 1.21.11 version |
 | Java | 21 |
 
 ---
